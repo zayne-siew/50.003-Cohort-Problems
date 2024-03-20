@@ -5,7 +5,7 @@
 
 Using MongoDB document database, give a logical design of the ER diagram with the Staff and Dept entities and Work relationship
 
-![](./images/er2.png) 
+![](../images/er2.png) 
 
 implement a simple API web-app with the following end-points
 

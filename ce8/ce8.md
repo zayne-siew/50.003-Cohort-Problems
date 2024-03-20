@@ -46,9 +46,9 @@ the user can use the form in `https://localhost:3000/staff/` to add new staff an
 ### Task 1 (2 Marks)
 Complete the TODOs in the React component `Dept.js` so that the department table can be rendered.
 
-![](./images/ce8_q2_1.png)
+![](../images/ce8_q2_1.png)
 
 ### Task 2 (3 Marks)
 Complete the TODOs in the React component `Staff.js` so that the deptartment code drop download can be rendered on start.
 
-![](./images/ce8_q2_2.png)
+![](../images/ce8_q2_2.png)
