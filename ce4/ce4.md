@@ -129,7 +129,7 @@ Using the callstack-microtask-macrotask table
 30:ev2.emit('run', count);
 ```
 
-The first few steps of the execution is given as follows to help you get started.
+The first few steps of the execution is given as follows to help you get started. Hint: `setImmediate()` enqueue task to _macro queue_.
 
 | program counter (line num) | call stack | micro queue | promises               | macro queue      | event reg                                    | console output |
 | -------------------------- | ---------- | ----------- | ---------------------- | ---------------- | -------------------------------------------- | -------------- |
