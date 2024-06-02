@@ -1,5 +1,11 @@
 # Cohort Exercise - Express.js, MongoDB, MySQL and Database design
 
+Submit a zip file containing 2 folders for each question.
+
+Task 1 folder contains a project folder. You can use ce5_q1 we provide.
+
+Task 2 folder contains 1 PDF file containing you step-by-step explanation max 2 page
+
 ## Task 1 (5 marks)
 
 Given the ER diagram below (refer to lecture note),
