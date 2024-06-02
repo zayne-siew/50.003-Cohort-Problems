@@ -56,13 +56,14 @@ implement a simple API web-app with the following end-points using MongoDB datab
 
 Make sure the database name is `echo` by having the following definition `const dbName = "echo";` in `db.js`.
 
-## Task 2
+## Task 2 (5 marks)
 
 Given the ER diagram below,
 
 ![](../images/er2.png)
 
-and assume that the database has been created after you follow the lecture note. Give step-by-step explanation on how we can implement this API
+give the step-by-step explanation on how we can implement API which returns the count of staff from each department.
+
 `http://127.0.0.1:3000/dept/count` which yields
+
 `[{"count":2,"dept":"HR"}]`.
-The API basically returns the count of staff from each department.
