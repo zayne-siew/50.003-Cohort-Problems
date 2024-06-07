@@ -1,0 +1,20 @@
+{
+  "name": "ce4_task_2",
+  "version": "1.0.0",
+  "description": "Package for CE 4 Task 2",
+  "main": "index.js",
+  "repository": "https://github.com/zayne-siew/50.003-Cohort-Problems",
+  "author": "zayne-siew <zayne.siew@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15"
+  },
+  "dependencies": {
+    "csv": "^6.3.9",
+    "express": "^4.18.2"
+  }
+}
