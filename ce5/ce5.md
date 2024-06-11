@@ -68,9 +68,9 @@ Given the ER diagram below,
 
 ![](../images/er2.png)
 
-give the step-by-step explanation on how we can implement the following API which returns the count of staff from each department by using MySQL database:
+give the step-by-step explanation on how we can implement the following API in your Express.js webapp which returns the count of staff from each department by using MySQL database:
 
-`http://127.0.0.1:3000/dept/count` 
+`http://127.0.0.1:3000/dept/count`
 
 yields
 
