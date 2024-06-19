@@ -5,7 +5,8 @@ var router = express.Router();
 
 
 router.get('/add/:code', async function(req, res, next) {
-    
+    const dept = new deptmodel.Dept(req.params.code);
+    deptmodel.insertMany([dept]);
     res.send(`TODO`); // TODO: Fixme
 });
 
