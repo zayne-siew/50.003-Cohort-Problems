@@ -4,7 +4,7 @@
 
 Given the ER diagram below (refer to lecture note),
 
-![](../images/er2.png)
+![](../../images/er2.png)
 
 implement a simple API web-app with the following end-points using MongoDB database:
 
