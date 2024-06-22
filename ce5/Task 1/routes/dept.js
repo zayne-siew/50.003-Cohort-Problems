@@ -25,6 +25,6 @@ router.get('/all/withstaff/', async function(_req, res, _next) {
         return { code: dept.code, staffs };
     });
     res.send(result);
-})
+});
 
 export default router;
