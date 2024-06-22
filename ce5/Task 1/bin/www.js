@@ -1,12 +1,7 @@
 #!/usr/bin/env node
-
-/**
- * Module dependencies.
- */
-
-var app = require('../app');
-var debug = require('debug')('ce6-q3-answer:server');
-var http = require('http');
+import http from 'http';
+import app from '../app.js';
+import debug from 'debug';
 
 /**
  * Get port from environment and store in Express.
@@ -86,5 +81,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  debug('ce6-q3-answer:server')('Listening on ' + bind);
 }

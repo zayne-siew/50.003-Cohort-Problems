@@ -29,7 +29,7 @@ implement a simple API web-app with the following end-points using MongoDB datab
      "_id": "6478a6de67e208e3a7764c43"
    }
    ```
-1. find all deptartments
+1. find all departments
    ```url
    http://localhost:3000/dept/all/
    ```
@@ -55,3 +55,7 @@ implement a simple API web-app with the following end-points using MongoDB datab
    ```
 
 Make sure the database name is `echo` by having the following definition `const dbName = "echo";` in `db.js`.
+
+## Solution
+
+Refer to [dept.js](https://github.com/zayne-siew/50.003-Cohort-Problems/blob/main/ce5/Task%201/routes/dept.js) and [staff.js](https://github.com/zayne-siew/50.003-Cohort-Problems/blob/main/ce5/Task%201/routes/staff.js) for the respective implementations.

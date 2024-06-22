@@ -1,23 +1,25 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var process = require('process');
-var db = require('./models/db.js');
+import cookieParser from 'cookie-parser';
+import express from 'express';
+import createError from 'http-errors';
+import logger from 'morgan';
+import path from 'path';
+import process from 'process';
+import { fileURLToPath } from 'url';
 
-process.on('SIGINT', db.cleanup);
-process.on('SIGTERM', db.cleanup);
+import { cleanup } from './models/db.js';
+import deptRouter from './routes/dept.js';
+import indexRouter from './routes/index.js';
+import staffRouter from './routes/staff.js';
+import usersRouter from './routes/users.js';
 
+process.on('SIGINT', cleanup);
+process.on('SIGTERM', cleanup);
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users.js');
-var deptRouter = require('./routes/dept.js');
-var staffRouter = require('./routes/staff.js');
-
-var app = express();
+const app = express();
 
 // view engine setup
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -48,4 +50,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+export default app;

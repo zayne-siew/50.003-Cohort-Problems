@@ -1,8 +1,16 @@
-const db = require('./db.js').db;
+import { db } from './db.js';
 
-const collectionName = 'staff'
+const collectionName = 'staff';
 
+/**
+ * Model class for staffs
+ */
 class Staff {
+    /**
+     * @param {string} id Client-side generated ID of the staff
+     * @param {string} name Name of the staff
+     * @param {string} dept_code Department the staff belongs to
+     */
     constructor(id, name, dept_code) {
         this.id = id;
         this.name = name;
@@ -10,13 +18,22 @@ class Staff {
     }
 }
 
-/** return all staffs */
+/**
+ * Returns a list of all staff in the database
+ *
+ * @returns The list of all staff
+ */
 async function all() {
-    const staffs = await find({});
-    return staffs;
+    return await find({});
 }
 
-/** find a set of staffs satisfying p */
+/**
+ * Find a set of staff satisfying a given condition
+ *
+ * @param {*} p An object containing the parameters to query as keys and the relevant query parameters as values
+ *
+ * @returns The list of all staff that satisfy the given condition
+ */
 async function find(p) {
     try {
         const collection = db.collection(collectionName);
@@ -30,10 +47,14 @@ async function find(p) {
     } catch(error) {
         console.error("database connection failed." + error);
         throw error;
-    } 
+    }
 }
 
-/** insert a list of staffs */
+/**
+ * Insert a list of staff into the database
+ *
+ * @param {Staff[]} staffs The list of staff to insert
+ */
 async function insertMany( staffs ) {
     try {
         const collection = db.collection(collectionName);
@@ -41,8 +62,7 @@ async function insertMany( staffs ) {
     } catch(error) {
         console.error("database connection failed." + error);
         throw error;
-    } 
+    }
 }
 
-
-module.exports = { Staff, all, find, insertMany }
+export { Staff, all, find, insertMany };

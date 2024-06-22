@@ -2,7 +2,13 @@ import { db } from './db.js';
 
 const collectionName = 'dept';
 
+/**
+ * Model class for departments
+ */
 class Dept {
+    /**
+     * @param {string} code Name of the department
+     */
     constructor(code) {
         this.code = code;
     }
@@ -56,4 +62,4 @@ async function insertMany(depts) {
     }
 }
 
-module.exports = { Dept, all, find, insertMany };
+export { Dept, all, find, insertMany };

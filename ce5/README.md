@@ -35,7 +35,7 @@ implement a simple API web-app with the following end-points using MongoDB datab
      "_id": "6478a6de67e208e3a7764c43"
    }
    ```
-1. find all deptartments
+1. find all departments
    ```url
    http://localhost:3000/dept/all/
    ```
