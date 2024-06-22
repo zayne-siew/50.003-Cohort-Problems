@@ -8,15 +8,15 @@ Given the ER diagram below (refer to lecture note),
 
 implement a simple API web-app with the following end-points using MongoDB database:
 
-1. add dept
+1. add dept into database
    ```url
    http://localhost:3000/dept/add/hr
    ```
-   yields
+   yields (displayed in browser)
    ```json
-   { "code": "hr", "_id": "6478a5a866394647f94f4021" }
+   { "code": "hr" }
    ```
-1. add staff
+1. add staff into database
    ```url
    http://localhost:3000/staff/add/1/aaron/hr
    ```
@@ -25,8 +25,7 @@ implement a simple API web-app with the following end-points using MongoDB datab
    {
      "id": "1",
      "name": "aaron",
-     "dept": "hr",
-     "_id": "6478a6de67e208e3a7764c43"
+     "dept": "hr"
    }
    ```
 1. find all departments
